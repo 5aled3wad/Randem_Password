@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="one"><h1>Genrate a <br><span>Random Password</span></h1></div>
+    <div>
+        <input class="pas" type="text" name="passw" id="pass" placeholder="Password">
+    </div>
+    <button onclick="creat_pass()" class="bu">Genrate Password</button>
+    </div>
+    <!-- java script -->
+    <script>
+        let passbox = document.getElementById("pass");
+        let ucas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let lcas = "abcdefghijklmnopqrstuvwxyz";
+        let num = "0123456789";
+        let ch = "!£$%^&*()_+-}{~#?@";
+        let len = 12;
+        let all = ucas + lcas + num + ch;
+
+        function creat_pass()
+        {
+            let pass = "";
+            // pass += ucas[Math.floor(Math.random() * ucas.length)];
+            // pass += lcas[Math.floor(Math.random() * lcas.length)];
+            // pass += num[Math.floor(Math.random() * num.length)];
+            // pass += ch[Math.floor(Math.random() * ch.length)];
+            while (pass.length < len)
+            {
+                pass += all[Math.floor(Math.random() * all.length)];
+            }
+            passbox.value = pass;
+        }
+    </script>
+</body>
+</html>

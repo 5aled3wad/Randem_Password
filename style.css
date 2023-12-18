@@ -1,0 +1,31 @@
+body{
+    background: #002339;
+    /* color: #fff; */
+
+}
+.container{
+    margin: 12% 15% ;
+
+}
+.one{
+    color: #fff;
+    font-size: 20px;  
+}
+.one span{
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+}
+.pas{
+    padding: 2% ;
+    border-radius: 5px;
+    font-size: 28px;
+}
+.bu{
+    color: #fff;
+    font-size: 18px;
+    background-color: #019f55;
+    padding: 2% 8%;
+    border-radius: 5px;
+    margin-top: 15px;
+
+}
